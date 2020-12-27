@@ -59,7 +59,7 @@ After several downgrade and upgrade tries, I got sick of trying to `brew` and `r
 
 Luckily, there is [jekyll-docker](https://github.com/envygeeks/jekyll-docker/blob/master/README.md) for this. This is a wonderful image. It even allows you to add Alpine Linux packages to it by specifying their name in a `.apk` file. This fixes issue 1 and issue 2.
 
-Unfortunately, jekyll-docker does not fix issue 3, because it [installs ImagaMagick7 by default](https://github.com/envygeeks/jekyll-docker/blob/master/repos/jekyll/Dockerfile#L82). Using it as-is will result in the following error:
+Unfortunately, jekyll-docker does not fix issue 3, because it [installs ImageMagick7 by default](https://github.com/envygeeks/jekyll-docker/blob/master/repos/jekyll/Dockerfile#L82). Using it as-is will result in the following error:
 
 ```
 ruby 2.7.1p83 (2020-03-31 revision a0c7c23c9c) [x86_64-linux-musl]
